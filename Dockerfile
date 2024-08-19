@@ -3,8 +3,8 @@ FROM node:20
 
 COPY --from=ffmpeg / /
 
-RUN useradd -m myuser
-USER myuser
+RUN useradd -m 10038
+USER 10038
 
 WORKDIR /
 
