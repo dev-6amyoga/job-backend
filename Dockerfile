@@ -3,6 +3,9 @@ FROM node:20
 
 COPY --from=ffmpeg / /
 
+RUN apt-get update
+RUN apt-get install useradd
+
 RUN useradd -m 10038
 USER 10038
 
