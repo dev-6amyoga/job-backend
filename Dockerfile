@@ -5,8 +5,8 @@ COPY --from=ffmpeg / /
 
 RUN which adduser
 
-RUN adduser 10038
-USER 10038
+RUN adduser user-10038
+USER user-10038
 
 WORKDIR /
 
