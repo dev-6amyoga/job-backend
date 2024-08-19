@@ -3,6 +3,9 @@ FROM node:20
 
 COPY --from=ffmpeg / /
 
+RUN useradd -m myuser
+USER myuser
+
 WORKDIR /
 
 COPY ./package*.json ./job-backend/
